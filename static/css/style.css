@@ -1,0 +1,21 @@
+.home_image	{
+	height: auto;
+	background:	linear-gradient(
+				 to right,
+					    rgba(12,39,222, 0.5),
+					    rgba(238,60,65,.3)
+						  ),
+				url(../images/my\ flask.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+.center_home {
+	padding-top: 10px;
+}
+
+.bg-white {
+	color: transparent !important;
+}

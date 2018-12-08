@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',  filename ='css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body class="home_image">
+	<nav class="navbar navbar-fixed bg-dark">
+		<div class="container">
+			<ul class="nav">
+				<li class="nav-item"><a href="{{url_for('index')}}" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="{{url_for('register')}}" class="nav-link">Register</a></li>
+					<li class="nav-item"><a href="{{url_for('signin')}}" class="nav-link">Signin</a></li>	
+				
+				<li class="nav-item"><a href="{{url_for('admin')}}" class="nav-link">Admin</a></li>
+			</ul>
+		</div>
+	</nav>
+	{% block body_block %}
+		
+	{% endblock %}
+	
+
+</body>
+</html>
